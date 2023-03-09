@@ -2,7 +2,7 @@
 @section('content')
 <h5>Add Notes</h5>
 <br>
-<form action="{{route('tutor.note_store',$course)}}" method="post" enctype="multipart/form-data">
+<form action="{{route('tutor.note_store',$course)}}"  Style="overflow-y:scroll" method="post" enctype="multipart/form-data">
 @if($errors->any())
             <div class="alert alert-danger">{{$errors->first()}}</div>
             @endif
